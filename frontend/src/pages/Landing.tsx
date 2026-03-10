@@ -1,10 +1,11 @@
 import NavBar from "../components/NavBar"
 import { motion } from "framer-motion";
 import { Typewriter } from "../components/TypeWriter"
+import Scrolling from "../components/Landing/Scrolling";
 
 export default function Landing() {
     return (
-        <div className="min-h-screen bg-[#fffefa] antialiased selection:bg-red-500 selection:text-white">
+        <div className="min-h-screen bg-[#fefefe] antialiased selection:bg-red-500 selection:text-white">
             <NavBar />
             <div className="min-h-[80vh]">
                 <div className="min-h-[80vh] flex flex-col justify-center p-8">
@@ -32,7 +33,7 @@ export default function Landing() {
                         </motion.p>
                     </div>
                     
-                    <div className="mt-8">
+                    <div className="mt-8 flex flex-col md:flex-row gap-4">
                         <motion.button
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -47,9 +48,23 @@ export default function Landing() {
                         >
                             Explore
                         </motion.button>
+                        <motion.button 
+                        initial={{opacity: 0, y : 20}}
+                        animate={{opacity: 1, y: 0}}
+                        whileHover={{scale: 1.05}}
+                        whileTap={{scale:0.95}}
+                        transition={{
+                            default: {duration: 0.7, delay: 1},
+                            scale: {duration: 0.2}
+                        }}
+                        type="button" 
+                        className="bg-red-700 text-black py-4 px-10 rounded-full font-bold uppercase tracking-widest text-sm shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-shadow duration-300">
+                            Next Drop
+                        </motion.button>
                     </div>
                 </div>
             </div>
+            <Scrolling />
         </div>
     )
 }

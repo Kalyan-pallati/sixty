@@ -58,7 +58,7 @@ export const Typewriter = ({
       
 
       <span className="relative inline-flex items-center leading-[1.1] min-h-[1.1em]">
-        <span className="inline-block pr-3 text-transparent bg-clip-text bg-gradient-to-r from-black to-neutral-600 font-pixel text-4xl sm:text-5xl md:text-7xl lg:text-[80px]">
+        <span className="inline-block pr-3 text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 to-neutral-600 font-pixel text-4xl sm:text-5xl md:text-7xl lg:text-[80px]">
             {displayText || "\u00A0"}
         </span>
         
