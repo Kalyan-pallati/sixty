@@ -4,7 +4,7 @@ import { Typewriter } from "../components/TypeWriter"
 
 export default function Landing() {
     return (
-        <div className="min-h-screen bg-[#280905] antialiased selection:bg-red-500 selection:text-white">
+        <div className="min-h-screen bg-[#fffefa] antialiased selection:bg-red-500 selection:text-white">
             <NavBar />
             <div className="min-h-[80vh]">
                 <div className="min-h-[80vh] flex flex-col justify-center p-8">
@@ -22,7 +22,7 @@ export default function Landing() {
                         />
                     </motion.div>
                     
-                    <div className="max-w-2xl mt-4 text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide">
+                    <div className="max-w-2xl mt-4 text-lg md:text-xl text-black font-medium leading-relaxed tracking-wide">
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ export default function Landing() {
                                 scale: { duration: 0.2 },
                             }}
                             type="button" 
-                            className="bg-white text-black py-4 px-10 rounded-full font-bold uppercase tracking-widest text-sm shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-shadow duration-300"
+                            className="bg-black text-white py-4 px-10 rounded-full font-bold uppercase tracking-widest text-sm shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-shadow duration-300"
                         >
                             Explore
                         </motion.button>

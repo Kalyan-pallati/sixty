@@ -48,7 +48,7 @@ export const Typewriter = ({
   }, [displayText, isDeleting, wordIndex, words, typingSpeed, deletingSpeed, pauseTime]);
 
   return (
-    <div className="flex flex-col md:flex-row md:items-center text-white font-sans tracking-tight">
+    <div className="flex flex-col md:flex-row md:items-center text-black font-sans tracking-tight">
       
       {staticText && (
         <span className="font-pixel text-5xl sm:text-6xl md:text-7xl lg:text-[80px] md:mr-4 mb-2 md:mb-0">
@@ -58,7 +58,7 @@ export const Typewriter = ({
       
 
       <span className="relative inline-flex items-center leading-[1.1] min-h-[1.1em]">
-        <span className="inline-block pr-3 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 font-pixel text-4xl sm:text-5xl md:text-7xl lg:text-[80px]">
+        <span className="inline-block pr-3 text-transparent bg-clip-text bg-gradient-to-r from-black to-neutral-600 font-pixel text-4xl sm:text-5xl md:text-7xl lg:text-[80px]">
             {displayText || "\u00A0"}
         </span>
         
@@ -66,7 +66,7 @@ export const Typewriter = ({
         <motion.span
             animate={{ opacity: [1, 0] }}
             transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
-            className="md:absolute right-0 top-1/2 -translate-y-1/2 h-[70%] w-[3px] md:w-[5px] bg-white"
+            className="md:absolute right-0 top-1/2 -translate-y-1/2 h-[70%] w-[3px] md:w-[5px] bg-neutral-700"
         />
       </span>
       
