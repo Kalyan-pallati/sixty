@@ -9,7 +9,7 @@ export default function Scrolling() {
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
             <motion.div
                 className="flex whitespace-nowrap text-neutral-800 font-pixel" 
-                style={{fontSize: '90px'}}
+                style={{fontSize: '80px'}}
                 animate={{ x: ["0%", "-50%"]}}
                 transition={{
                     ease: "linear",
