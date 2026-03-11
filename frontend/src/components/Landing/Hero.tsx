@@ -12,24 +12,27 @@ export default function Hero() {
             >
                 <Typewriter
                     staticText="SIXTY"
-                    words={["Streetwear", "Limited Drops", "Built Different"]}
+                    words={["Oversized","Weird","UNISEX"]}
                     typingSpeed={120}
                     deletingSpeed={80}
                     pauseTime={1000}
                 />
             </motion.div>
             
-            <div className="max-w-2xl mt-4 text-lg md:text-xl text-black font-medium leading-relaxed tracking-wide">
+            <div className="max-w-2xl mt-2 text-lg md:text-xl text-black font-medium leading-relaxed tracking-wide">
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.5 }}
                 >
-                    We are a streetwear brand that focuses on limited drops and high quality products. We are built different and we want to change the game.
+                    SIXTY is an oversized unisex streetwear label focused on comfort and simplicity.
+                    Our pieces are made to be worn every day without overthinking the fit.
+                    Clean designs, relaxed silhouettes, and a little bit of attitude.
+                    Just good clothing that feels right when you put it on.
                 </motion.p>
             </div>
             
-            <div className="mt-8 flex flex-col md:flex-row gap-4">
+            <div className="-ml-1 mt-6 flex flex-col md:flex-row gap-4">
                 <motion.button
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

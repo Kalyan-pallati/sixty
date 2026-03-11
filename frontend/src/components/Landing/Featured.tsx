@@ -27,19 +27,19 @@ export default function Featured() {
                 Check out the products that are curated just for you!
 
             </motion.p>
-            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 border border-black rounded-2xl mt-8 bg-red-700">
                 {data.map(product => (
                     <div key={product.id} >
                         <motion.div className="p-2 "
                         initial={{opacity: 0, y: 20}}
                         whileInView={{opacity: 1, y: 0}}
                         transition={{duration: 0.5, delay: 0.4}}>
-                            <div className="overflow-hidden w-full h-full aspect-[3/4] border rounded-2xl">
+                            <div className="overflow-hidden w-full h-full aspect-[3/4] border rounded-2xl hover:shadow-[0_0_25px_rgba(255,255,255,0.6)]">
                                 <img src={product.image} alt={product.name} className="w-full h-full hover:scale-110 duration-1000 overflow-hidden " />
                             </div>
-                            <div className="flex flex-col items-start mt-4 rounded-xl px-4 hover:scale-105 transition-transform duration-300">
-                            <h1 className="pt-2 font-bold text-2xl border-b-2 border-black">{product.name}</h1>
-                            <p className="text-xl font-pixel py-1 pd-2">{product.price}</p>
+                            <div className="flex flex-col items-start mt-4 rounded-xl transition-transform duration-300">
+                            <h1 className=" font-bold text-2xl border-b-2 border-white text-white">{product.name}</h1>
+                            <p className="text-xl font-pixel py-1 pd-2 text-white">{product.price}</p>
                             </div>
                         </motion.div>
                     </div>
