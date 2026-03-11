@@ -56,13 +56,11 @@ export const Typewriter = ({
         </span>
       )}
       
-
       <span className="relative inline-flex items-center leading-[1.1] min-h-[1.1em]">
-        <span className="inline-block pr-3 text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 to-neutral-600 font-pixel text-4xl sm:text-5xl md:text-7xl lg:text-[80px]">
+        <span className="inline-block pr-3 text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-red-600 font-pixel text-4xl sm:text-5xl md:text-7xl lg:text-[80px]">
             {displayText || "\u00A0"}
         </span>
         
-
         <motion.span
             animate={{ opacity: [1, 0] }}
             transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}

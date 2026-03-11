@@ -3,7 +3,7 @@ import { Typewriter } from "../TypeWriter";
 
 export default function Hero() {
     return (
-    <div className="min-h-[80vh]">
+    <div className="bg-[#fefefe] min-h-[80vh]">
         <div className="min-h-[80vh] flex flex-col justify-center p-8">
             <motion.div className="relative"
                 initial={{ opacity: 0, y: 20 }}
