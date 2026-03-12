@@ -1,4 +1,5 @@
 import {Instagram, Phone, Mail} from "lucide-react"
+import { FaFacebook, FaInstagram} from "react-icons/fa";
 
 export default function Footer() {
 
@@ -30,7 +31,32 @@ export default function Footer() {
             </div>
         </div>
 
-        <div className="border-t border-red-700 mt-12 pt-12 text-center text-lg">
+        <div className="flex justify-center md:justify-end gap-4 p-4 items-center">
+            <p className="tracking-wide font-semibold">Follow us:</p>
+            <a 
+            href="https://www.instagram.com/sixtyfashion/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="cursor-pointer bg-pink-600 p-2.5 rounded-full hover:bg-pink-700 transition hover:-translate-y-1.5 duration-200">
+                <div className="text-white text-2xl"><FaInstagram />
+                </div>
+            </a>
+            <a 
+            href="https://www.facebook.com/sixtyfashion/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="cursor-pointer bg-blue-500 p-2.5 rounded-full hover:bg-blue-600 transition hover:-translate-y-1.5 duration-200">
+                <div className="text-white text-2xl"><FaFacebook />
+                </div>
+            </a>
+            <a 
+            href="mailto:contact@sixty.com"
+            className="cursor-pointer bg-red-700 p-2.5 rounded-full hover:bg-red-800 transition hover:-translate-y-1.5 duration-200">
+                <div className="text-white text-2xl"><Mail />
+                </div>
+            </a>
+        </div>
+        <div className="border-t border-red-700 pt-12 text-center text-lg">
             © 2026 SIXTY. All rights reserved.
         </div>
 
