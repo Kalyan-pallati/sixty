@@ -27,9 +27,10 @@ export default function Featured() {
                 Check out the products that are curated just for you!
 
             </motion.p>
-            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 border border-black rounded-2xl mt-8 bg-red-700">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 border border-black rounded-2xl mt-8 bg-red-700">
                 {data.map(product => (
-                    <div key={product.id} >
+                    <div title={product.name}
+                        key={product.id} >
                         <motion.div className="p-2 "
                         initial={{opacity: 0, y: 20}}
                         whileInView={{opacity: 1, y: 0}}

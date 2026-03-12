@@ -2,6 +2,7 @@ import {FaInstagram} from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
 import { FiMenu, FiX } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -20,10 +21,18 @@ export default function NavBar() {
             <div className="max-w-screen-xl mx-auto px-4 flex items-center">
                 <div className="hidden md:flex flex-1">
                     <ul className="flex gap-4 border border-transparent px-2 rounded-3xl">
-                        <li className={desktopnavbarstyling} style={{fontSize: '23px'}}>Home</li>
-                        <li className={desktopnavbarstyling} style={{fontSize: '23px'}}>About</li>
-                        <li className={desktopnavbarstyling} style={{fontSize: '23px'}}>Products</li>
-                        <li className={desktopnavbarstyling} style={{fontSize: '23px'}}>Contact</li>
+                        <li className={desktopnavbarstyling} style={{fontSize: '23px'}}>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li className={desktopnavbarstyling} style={{fontSize: '23px'}}>
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li className={desktopnavbarstyling} style={{fontSize: '23px'}}>
+                            <Link to="/products">Products</Link>
+                        </li>
+                        <li className={desktopnavbarstyling} style={{fontSize: '23px'}}>
+                            <Link to="/contact">Contact</Link>
+                        </li>
                     </ul>
                 </div>
                 <div>
