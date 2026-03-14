@@ -45,7 +45,7 @@ export default function NavBar() {
                 <div className="hidden md:flex flex-1 justify-end">
                     <ul className="flex gap-4">
                         <li><a href="https://www.instagram.com/wear.sixty" target="_blank" rel="noopener noreferrer" ><FaInstagram className="text-black hover:text-red-500 pt-2 mt-0.5" style={{fontSize: '35px'}} /></a></li>
-                        <li><a href="mailto:pallatikalyansai@gmail.com" target="_blank" rel="noopener noreferrer"><MdEmail className="text-black hover:text-red-500 pt-2 mt-0.5" style={{fontSize: '35px'}} /></a></li>
+                        <li><a href="mailto:pallatikalyansai@gmail.com" rel="noopener noreferrer"><MdEmail className="text-black hover:text-red-500 pt-2 mt-0.5" style={{fontSize: '35px'}} /></a></li>
                         <li className='font-pixel text-black hover:text-black-500 hover:bg-red-500 mt-1 border-2 border-black rounded-md p-0.5 px-3' style={{fontSize: '20px'}}>Follow us</li>
                     </ul>
                 </div>
