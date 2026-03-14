@@ -8,7 +8,7 @@ export default function Footer() {
         if(element) element.scrollIntoView({behavior: "smooth"});
     }
     return (
-        <footer className="bg-[#fefefe] -mt-12 gap-4 px-16 py-12 border-gray-200">
+        <footer className="bg-[#F7F4EA] -mt-12 gap-4 px-16 py-12 border-gray-200">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex flex-col gap-2 max-w-xs">
                 <h1 className="font-pixel text-4xl tracking-wide hover:text-red-700">SIXTY</h1>

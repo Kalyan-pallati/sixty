@@ -5,10 +5,10 @@ export default function Scrolling() {
     
     return (
         <div 
-            className="relative w-full overflow-hidden py-4 bg-red-700">
+            className="relative w-full overflow-hidden py-4 bg-red-700 shadow-[0_6px_15px_rgba(0,0,0,0.6)]">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
             <motion.div
-                className="flex whitespace-nowrap text-neutral-800 font-pixel text-[clamp(2rem,8vw,5rem)] text-white" 
+                className="flex whitespace-nowrap font-pixel text-[clamp(2rem,8vw,5rem)] text-white" 
                 animate={{ x: ["0%", "-50%"]}}
                 transition={{
                     ease: "linear",

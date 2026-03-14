@@ -1,3 +1,4 @@
+import Begin from "../components/About/Begin";
 import Hero from "../components/About/Hero";
 import Team from "../components/About/Team";
 import Footer from "../components/Footer";
@@ -8,6 +9,7 @@ export default function About() {
         <NavBar />
         <Hero />
         <Team />
+        <Begin />
         <Footer />
     </div>
   );
