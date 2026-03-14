@@ -54,10 +54,18 @@ export default function NavBar() {
                 
                     <div className='md:hidden bg-[#F7F4EA] border-t-2 border-gray-800'>
                         <ul className="flex flex-col items-center gap-4 mt-4">
-                            <li className={mobilenavbarstyling} style={{fontSize: '20px'}}>Home</li>
-                            <li className={mobilenavbarstyling} style={{fontSize: '20px'}}>About</li>
-                            <li className={mobilenavbarstyling} style={{fontSize: '20px'}}>Products</li>
-                            <li className={mobilenavbarstyling} style={{fontSize: '20px'}}>Contact</li>
+                            <li className={mobilenavbarstyling} style={{fontSize: '20px'}}>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li className={mobilenavbarstyling} style={{fontSize: '20px'}}>
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li className={mobilenavbarstyling} style={{fontSize: '20px'}}>
+                                <Link to="/products">Products</Link>
+                            </li>
+                            <li className={mobilenavbarstyling} style={{fontSize: '20px'}}>
+                                <Link to="/contact">Contact</Link>
+                            </li>
                         </ul>
                     </div>
                 )}
