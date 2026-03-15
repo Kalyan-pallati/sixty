@@ -1,6 +1,6 @@
 export default function Why() {
   return (
-    <section className="py-10 pb-20 bg-red-700 text-center">
+    <section className="py-10 pb-28 bg-red-700 text-center">
         <div>
             <h1 className="text-white text-5xl tracking-wide leading-snug font-semibold">Why we're called <span className="text-black font-pixel text-6xl font-normal">SIXTY</span></h1>
 
