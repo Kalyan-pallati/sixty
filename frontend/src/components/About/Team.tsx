@@ -17,7 +17,7 @@ export default function Team() {
     }
 
     return (    
-        <div className="my-10">
+        <div className="my-10 bg-white">
             <motion.h1 
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -25,7 +25,7 @@ export default function Team() {
                 viewport={{once: true}}
                 className="text-center md:text-start md:pl-20 text-5xl md:text-6xl font-pixel tracking-wide"
             >
-                Meet our Team
+                Meet the Team
             </motion.h1>
             
             <div className="flex flex-col md:flex-row items-center md:justify-between mt-10 px-6 md:px-20 gap-4">
