@@ -1,10 +1,37 @@
 export default function GetInTouch() {
+      async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+        const data1 = {
+          firstName: formData.get("firstName"),
+          lastName: formData.get("lastName"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        }
+        try {
+          const res = await fetch("http://localhost:8000/send-email", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data1),
+          });
+          const result = await res.json();
+          if (result.status === "sent") {
+            console.log("Email sent successfully:", result.response);
+          } else {
+            console.error("Error sending email:", result.response);
+          }
+        } catch (error) {
+          console.error("Error sending email:", error);
+        }
+      }
   return (
     <section>
       <div className="min-h-[90vh] flex md:flex-row flex-col pb-12">
 
         <div className="bg-red-700 md:w-1/2 flex flex-col items-start justify-center text-white px-10 py-20 gap-6 ">
-          <h1 className="font-pixel md:text-6xl">Get In Touch</h1>
+          <h1 className="font-pixel text-6xl">Get In Touch</h1>
           <h2 className="text-3xl">We'd love to hear from you!</h2>
           <p className="text-start max-w-96">
             If you have any questions or would like to get in touch with us,
@@ -13,7 +40,7 @@ export default function GetInTouch() {
         </div>
 
         <div className="w-full md:w-1/2 flex items-center justify-center">
-          <form className="flex flex-col gap-4 p-10">
+          <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col gap-4 p-10">
 
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex flex-col gap-1">
