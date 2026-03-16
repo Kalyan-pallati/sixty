@@ -13,7 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-resend.api_key = "re_e293WZFr_KAZVCroQgCg3DN6kVmrogUJ1"
+resend.api_key = "YOUR_RESEND_API_KEY"
 
 
 class ContactForm(BaseModel):
