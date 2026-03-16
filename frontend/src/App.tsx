@@ -4,11 +4,13 @@ import Landing from './pages/Landing';
 import About from './pages/About';
 import Contact from './pages/Contact'
 import Products from './pages/Products';
+import ScrolltoTop from './components/ScrolltoTop';
 function App() {
 
   return (
     <>
       <Router>
+        <ScrolltoTop />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />

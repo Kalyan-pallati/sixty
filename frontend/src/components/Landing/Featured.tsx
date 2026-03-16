@@ -29,7 +29,7 @@ export default function Featured() {
 
             </motion.p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 pt-16 border border-black mt-8 bg-red-700 rounded-t-3xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 pt-16 w-full mt-8 bg-red-700 rounded-t-3xl">
                 {data.map(product => (
                     <div title={product.name}
                         key={product.id} >
@@ -41,7 +41,7 @@ export default function Featured() {
                                 <img src={product.image} alt={product.name} className="w-full h-full hover:scale-110 duration-1000 overflow-hidden " />
                             </div>
                             <div className="flex flex-col items-start mt-4 rounded-xl transition-transform duration-300">
-                            <h1 className=" font-bold text-2xl border-b-2 border-white text-white">{product.name}</h1>
+                            <h1 className=" font-bold text-2xl border-b-2 text-white">{product.name}</h1>
                             <p className="text-xl font-pixel py-1 pd-2 text-white">{product.price}</p>
                             </div>
                         </motion.div>
