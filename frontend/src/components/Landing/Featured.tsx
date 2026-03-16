@@ -11,7 +11,8 @@ export default function Featured() {
         {id: 4, name: "Anime Tee", price: "$29.99", image: product4}
     ];
     return (
-        <div className="bg-[#fefefe] flex flex-col text-center p-4 py-12 ">
+        <div className="bg-[#fefefe] flex flex-col text-center pt-12">
+            <div className="p-4">
             <motion.h2 
             initial={{opacity: 0, y: 20}}
             whileInView={{opacity: 1, y: 0}}
@@ -27,7 +28,8 @@ export default function Featured() {
                 Check out the products that are curated just for you!
 
             </motion.p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 border border-black rounded-2xl mt-8 bg-red-700">
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 pt-16 border border-black mt-8 bg-red-700 rounded-t-3xl">
                 {data.map(product => (
                     <div title={product.name}
                         key={product.id} >
