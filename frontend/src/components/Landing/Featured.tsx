@@ -37,7 +37,7 @@ export default function Featured() {
                         initial={{opacity: 0, y: 20}}
                         whileInView={{opacity: 1, y: 0}}
                         transition={{duration: 0.5, delay: 0.4}}>
-                            <div className="overflow-hidden w-full h-full aspect-[3/4] border rounded-2xl hover:shadow-[0_0_25px_rgba(255,255,255,0.6)]">
+                            <div className="overflow-hidden w-full h-full aspect-[3/4] border rounded-t-2xl hover:shadow-[0_0_25px_rgba(255,255,255,0.6)]">
                                 <img src={product.image} alt={product.name} className="w-full h-full hover:scale-110 duration-1000 overflow-hidden " />
                             </div>
                             <div className="flex flex-col items-start mt-4 rounded-xl transition-transform duration-300">
