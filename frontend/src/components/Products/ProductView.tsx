@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import product from "../../assets/featured_pictures/product.jpg"
 export default function ProductView() {
 
@@ -13,11 +14,23 @@ export default function ProductView() {
     return (
         <div className="mb-20">
             <div className="mt-4">
-            <h1 className="font-pixel text-center text-6xl py-4">Products curated just for you</h1>
+                <motion.h1 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{once: true}}
+                    transition={{ duration: 0.7 }}
+                    className="font-pixel text-center text-6xl py-4">
+                        Products curated just for you
+                </motion.h1>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-2 rounded-t-3xl pt-10">
                 {staticProducts.map((product) => (
-                    <div key={product.id} className="shadow-sm">
+                    <motion.div key={product.id} className="shadow-sm"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{once: true}}
+                        transition={{ duration: 0.7 }}
+                    >
                         <div className="md:h-[380px] md:w-full overflow-hidden">
                         <img src={product.image} alt={product.name} 
                          className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"/>
@@ -26,7 +39,7 @@ export default function ProductView() {
                             <h1 className="font-bold text-lg border-b-2 border-black">{product.name}</h1>
                             <p className="font-pixel text-xl">${product.price}</p>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
