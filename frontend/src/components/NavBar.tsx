@@ -21,7 +21,7 @@ export default function NavBar() {
     const mobilenavbarstyling = "text-black font-pixel p-2 px-10 hover:text-red-500 cursor-pointer hover:bg-black hover:rounded-full border-red-500";
     const desktopnavbarstyling = "text-black font-pixel my-1 py-1 px-4 hover:text-red-500 hover:bg-black hover:rounded-full border-red-500 cursor-pointer";
     return (
-        <nav className={`z-50 py-3 mx-auto transition-all duration-500 ease-out shadow-[0_0_25px_rgba(0,0,0,0.6)] ${isScrolled ? 'shadow-lg bg-transparent backdrop-blur-2xl' : 'bg-[#F7F4EA]'} ${scrollY ? `sticky top-0 translate-y-3 md:transform md:transition-all md:ease-out md:border md:rounded-full md:mx-2` : 'block'}`}>
+        <nav className={`z-50 py-3 mx-auto transition-all duration-500 ease-out shadow-[0_0_25px_rgba(0,0,0,0.6)] ${isScrolled ? 'shadow-lg bg-transparent backdrop-blur-2xl' : 'bg-[#F7F4EA]'} ${scrollY ? `sticky top-0 md:translate-y-3 md:transform md:transition-all md:ease-out md:border md:rounded-full md:mx-2` : 'block'}`}>
             <div className="max-w-screen-xl mx-auto px-4 flex items-center">
                 <div className="hidden md:flex flex-1">
                     <ul className="flex gap-4 border border-transparent px-2 rounded-3xl">
